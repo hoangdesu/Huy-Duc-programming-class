@@ -30,15 +30,15 @@ public class Apr23_Arrays {
         System.out.println("HashMap took " + (endTime - startTime) + " milliseconds");
 
 
-        HW:
-        countWordFrequency("hi hello hey hi");
-
-        output:
-        {
-            hi: 2,
-            hello: 1,
-            hey: 1
-        }
+//        HW:
+//        countWordFrequency("hi hello hey hi");
+//
+//        output:
+//        {
+//            hi: 2,
+//            hello: 1,
+//            hey: 1
+//        }
 
     }
 
@@ -71,7 +71,7 @@ public class Apr23_Arrays {
         return false;
     }
 
-    HashMap<String, Integer> countWordFrequency(String s) {
-
-    }
+//    HashMap<String, Integer> countWordFrequency(String s) {
+//
+//    }
 }
