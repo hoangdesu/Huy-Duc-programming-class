@@ -24,7 +24,7 @@
 
     <!-- Block elements vs inline elements -->
     <!-- - block: will take up the whole available width e.g. p, headings, div -->
-    <!-- inline: will ONLY use up width as it needs e.g. span, img, button, -->
+    <!-- - inline: will ONLY use up width as it needs e.g. span, img, button, -->
 
     <!-- span: inline element -->
     <span>HTML</span>
@@ -62,8 +62,149 @@
         <button>Submit</button>
     </form>
 
-    <!-- TODO:  -->
-    <!-- table, list elements -->
+    <!-- action: where the form is submitted to -->
+    <!-- by default: it will use the GET request -->
+    <!-- the problem is GET request will EXPOSE data through the query string -->
+    <!-- -> go for the POST if there are some sensitive data to protect -->
+
+    <!-- HTTP methods -->
+<!--      
+    - GET
+    - POST
+    - PUT
+    - DELETE 
+    -->
+
+    <form action="" method="POST">
+        <label for="">Username</label>
+        <input type="text" id="" name="uname">
+        <label for="">Password</label>
+        <input type="password" name="pwd">
+        <button>Login</button>
+    </form>
+
+    <!-- http://127.0.0.1:5500/index.html?uname=abc&pwd=hahaha
+    https://www.youtube.com/results?search_query=html
+    https://www.google.com/search?q=html+css+js&rlz=1C5CHFA_enVN1082VN1082&oq=html+css&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgwIARAjGCcYgAQYigUyBggCEEUYOTIGCAMQRRg8MgYIBBBFGDwyBggFEEUYPDIGCAYQRRhBMgYIBxBFGEHSAQc4MjFqMGoxqAIAsAIA&sourceid=chrome&ie=UTF-8 -->
+
+
+    <table border="1">
+        <!-- <thead></thead>
+        <tbody></tbody>
+        <tfoot></tfoot> -->
+
+        <!-- Row 1 -->
+        <tr>
+            <!-- Col1 -->
+            <th>#</th>
+            <!-- Col2 -->
+            <th>Name</th>
+            <!-- Col3 -->
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+
+        <!-- Row 2 -->
+        <tr>
+            <td>1</td>
+            <td>Pho</td>
+            <td>60k</td>
+            <td rowspan="3">235k</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td align="right">Hu Tieu</td>
+            <td>75k</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Bun Dau Mam Tom</td>
+            <td>100k</td>
+        </tr>
+
+        <tr>
+            <th colspan="4">Jack's restaurant</th>
+        </tr>
+    </table>
+
+
+    <!-- un-ordered list -->
+    <ul>
+        <li>com tam</li>
+        <li>pho bo</li>
+        <li>hu tieu</li>
+    </ul>
+
+    <!-- ordered list -->
+    <ol type="i">
+        <li>com tam</li>
+        <li>pho bo</li>
+        <li>hu tieu</li>
+    </ol>
+
+    <!-- embedding parts of other website to your site -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2623849704532!2d106.71786775064186!3d10.791204862003886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752998aad76349%3A0x4de36e9c4106b540!2sPark%202%20Vinhomes%20Central%20Park!5e0!3m2!1sen!2s!4v1755266510254!5m2!1sen!2s" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <iframe width="600" height="400" src="https://www.youtube.com/embed/vQOoYv9AzLg?si=KB7uKaza6XomymCC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <video width="600" height="400" autoplay muted>
+        <source src="my-video.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        <!-- fallback -->
+        Your browser does not support the video tag.
+    </video>
+
+
+    <form action="">
+        <table>
+            <tr>
+                <td>
+                    <label for="usrname">Username</label>
+                </td>
+                <td>
+                    <input type="text" name="usrname" id="usrname">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="pwd">Password</label>
+                </td>
+                <td>
+                    <input type="password" name="pwd" id="pwd">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="gender">Gender</label>
+                </td>
+                <td>
+                    <div>
+                        <!-- make sure that they all have the same "name" attribute -->
+                        <!-- hashmap: key-value -->
+                        <!-- key: gender - value: male | female | other -->
+                        <input type="radio" name="gender" id="gender-male" value="male">
+                        <label for="gender-male">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" id="gender-female" value="female">
+                        <label for="gender-female">Female</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" id="gender-other" value="other">
+                        <label for="gender-other">Other</label>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <button>Submit</button>
+    </form>
+
+    <!-- http://127.0.0.1:5500/index.html?usrname=zzz&pwd=zzz&gender=on -->
 
     <div style="margin-bottom: 500px"></div>
 
