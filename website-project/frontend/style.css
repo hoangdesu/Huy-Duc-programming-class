@@ -1,0 +1,15 @@
+#button-groups {
+    display: flex;
+    flex-direction: column;
+    
+    button {
+        width: 30px;
+    }
+}
+
+#calculator-container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+}

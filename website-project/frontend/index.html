@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+
     <!-- HTML: hyper-text markup language -->
     <h1>heading 1</h1>
     <h2>heading 2</h2>
@@ -204,9 +207,31 @@
         <button>Submit</button>
     </form>
 
+    <button id="clickme-btn">Click me</button>
+
+
+    <section id="calculator-container">
+        <input type="number" id="first-input">
+
+        <div id="button-groups">
+            <button id="add-btn">+</button>
+            <button id="add-btn">-</button>
+            <button id="add-btn">x</button>
+            <button id="add-btn">/</button>
+        </div>
+        
+        <input type="number" id="second-input">
+        <span>=</span>
+        <input type="number" id="result-input">
+    </section>
+
+
     <!-- http://127.0.0.1:5500/index.html?usrname=zzz&pwd=zzz&gender=on -->
 
     <div style="margin-bottom: 500px"></div>
+
+    <!-- put script last, but inside body -->
+    <script src="script.js"></script>
 
 </body>
 </html>
